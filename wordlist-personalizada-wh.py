@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# Improvements made by @sidneyossemer / @hal0x9k
+## Interactive mode added
+## Updated swap characters dictionary
+## Updated combinations set
 
 import sys
 import string
