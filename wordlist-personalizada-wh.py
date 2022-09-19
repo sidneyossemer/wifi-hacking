@@ -25,7 +25,8 @@ if (args.complexity == None or int(args.complexity) not in range(0, 5)):
 if (args.nRange == None):
 	args.nRange = int(1000)
 
-dic = {'aioO':'@100','aeioOs':'43100$','aeiou':'AEIOU','IilLsS':'1111$$'}
+swaps = {'aaeil':'4@311', 'uwm':'vmw', 'ogtssz':'067$52', '12334567890':'izebasgtbgo'}
+
 wordlist = open(args.output, 'w')
 date = datetime.datetime.now()
 
@@ -35,31 +36,31 @@ def function_2 (word):
 		wordlist.write(word+'@'+str(l)+'\n')
 
 def function_1 (line):
-	for i in dic:
-		wordlist.write(line.translate(str.maketrans(i,dic[i]))+'\n')
-		function_2(line.translate(str.maketrans(i,dic[i])))
-		wordlist.write(line.translate(str.maketrans(i,dic[i]))+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i]))+'@'+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).upper()+'\n')
-		function_2(line.translate(str.maketrans(i,dic[i])).upper())
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).upper()+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).upper()+'@'+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).lower()+'\n')
-		function_2(line.translate(str.maketrans(i,dic[i])).lower())
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).lower()+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).lower()+'@'+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).capitalize()+'\n')
-		function_2(line.translate(str.maketrans(i,dic[i])).capitalize())
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).capitalize()+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).capitalize()+'@'+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).title()+'\n')
-		function_2(line.translate(str.maketrans(i,dic[i])).title())
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).title()+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).title()+'@'+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).swapcase()+'\n')
-		function_2(line.translate(str.maketrans(i,dic[i])).swapcase())
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).swapcase()+str(date.year)+'\n')
-		wordlist.write(line.translate(str.maketrans(i,dic[i])).swapcase()+'@'+str(date.year)+'\n')
+	for i in swaps:
+		wordlist.write(line.translate(str.maketrans(i,swaps[i]))+'\n')
+		function_2(line.translate(str.maketrans(i,swaps[i])))
+		wordlist.write(line.translate(str.maketrans(i,swaps[i]))+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i]))+'@'+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).upper()+'\n')
+		function_2(line.translate(str.maketrans(i,swaps[i])).upper())
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).upper()+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).upper()+'@'+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).lower()+'\n')
+		function_2(line.translate(str.maketrans(i,swaps[i])).lower())
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).lower()+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).lower()+'@'+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).capitalize()+'\n')
+		function_2(line.translate(str.maketrans(i,swaps[i])).capitalize())
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).capitalize()+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).capitalize()+'@'+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).title()+'\n')
+		function_2(line.translate(str.maketrans(i,swaps[i])).title())
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).title()+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).title()+'@'+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).swapcase()+'\n')
+		function_2(line.translate(str.maketrans(i,swaps[i])).swapcase())
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).swapcase()+str(date.year)+'\n')
+		wordlist.write(line.translate(str.maketrans(i,swaps[i])).swapcase()+'@'+str(date.year)+'\n')
 
 def main():
 	print( f"{date:%Y-%m-%d %H:%M:%S}"+"\tProcess started")
